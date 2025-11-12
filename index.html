@@ -29,16 +29,33 @@
        @media screen and (min-width: 867px) and (max-width: 1095px) {
             /* Yiming */
             body {
-                background-color: rgb(168, 148, 123);
+                background-color: rgb(192, 225, 227);
             }
 
-            #div4 {
-                 width: 75vw;
-                 height: 50vh;
-                 position: absolute;
+            #div17 {
+                 width: 45vw;
+                 height: 30vh;
+                 position: relative;
                  padding: 15%;
                  border-radius:25%;
-                 background-color: #8cd0a2;
+                 background-color: #e6d5f0;
+                 transform: translateX(50%);
+                 transform: translateY(-50%);
+                 animation: scale 5s alternate-reverse;
+            }
+            @keyframes scale {
+                0%{
+                    transform: rotate(0);
+                    transform: scale(1);
+                }
+                50%{
+                    transform: rotate(30);
+                    transform: scale(0.7);
+                }
+                100%{
+                    transform: rotate(180);
+                    transform: scale(0.2);
+                }
             }
         }   
 
@@ -509,8 +526,6 @@
             }
 
             }
-
-        }
               
 
         
