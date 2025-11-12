@@ -1,5 +1,5 @@
 # Intro to Computation — Media Query Relay: Team 2 <br>
-Team 2:  Coco Li, York Mgbejume, Mandy Sun, Runqi Wang
+Team 2:  Mandy Sun, Yiming Wang, Coco Li, Runqi Wang
 
 ### About Class
 Intro to Computation<br>
