@@ -32,26 +32,475 @@
 
         @media screen and (min-width: 640px) and (max-width: 867px) {
             /* Mandy */
-               #div2{
-                position:relative;
-                width:calc(100% - 20px);
-                height:calc(100% - 20px);
-                background-color: blue;
-                margin: 10px;
-            }
-                #div3{
-                position:relative;
+                #div1{
+                    display:block;
+                    position:absolute;
+                    background-color: #FDFF80;
+                    width:100%;
+                    height:100%;
+                    z-index:0;
+                }
+                #div2{
                 display:block;
-                width:100px;
-                height:50px;
-                background-color:darkblue;
+                width:310px;
+                height:310px;
+                background-color:#0FFFA3;
                 border-radius:50%;
                 position:absolute;
-                top:50%;
-                left:50%;
-                z-index:1;
+                top:52%;
+                left:58%;
+                transform: translate(-50%, -50%);
+                z-index:0;
+                animation:color2 10s linear infinite;
                 }
+                @keyframes color2{
+                    0%{
+                        background: radial-gradient(circle, #0011DE 90%, transparent 100%);
+                        opacity: 0;
+                        top:30%;
+                        left:20%;
+                    }
+                    50%{
+                        background: radial-gradient(circle, #5E29BA 70%, transparent 90%);
+                        opacity: 1;
+                        top:40%;
+                        left:35%;
+                    }
+                    100%{
+                        background: radial-gradient(circle, #7E29BA 50%, transparent 80%);
+                        opacity: 0;
+                        top:50%;
+                        left:40%;
+                        }
+                    }
+                #div3{
+                display:block;
+                width:210px;
+                height:210px;
+                background-color:#0FFFA3;
+                border-radius:50%;
+                position:absolute;
+                top:52%;
+                left:58%;
+                transform: translate(-50%, -50%);
+                z-index:0;
+                animation:color1 10s linear infinite;
+                }
+                @keyframes color1{
+                    0%{
+                        background: radial-gradient(circle, #D9C843 100%, transparent 80%);
+                        opacity: 0;
+                        top:0%;
+                        left:40%;
+                    }
+                    50%{
+                        background: radial-gradient(circle, #FFEE63 70%, transparent 90%);
+                        opacity: 1;
+                        top:20%;
+                        left:40%;
+                    }
+                    100%{
+                        background: radial-gradient(circle, #F2E896 50%, transparent 100%);
+                        opacity: 0;
+                        top:40%;
+                        left:40%;
+                    }
+                }
+
+                #div4{
+                display:block;
+                width:210px;
+                height:210px;
+                background-color:#0FFFA3;
+                border-radius:50%;
+                position:absolute;
+                top:52%;
+                left:58%;
+                transform: translate(-50%, -50%);
+                z-index:0;
+                animation:color3 10s linear infinite;
+                }
+                @keyframes color3{
+                    0%{
+                        background: radial-gradient(circle, #29BA91 60%, transparent 100%);
+                        opacity: 0;
+                        top:70%;
+                        left:60%;
+                    }
+                    50%{
+                        background: radial-gradient(circle, #29BAA7 60%, transparent 100%);
+                        opacity: 1;
+                        top:68%;
+                        left:70%;
+                    }
+                    100%{
+                        background: radial-gradient(circle, #29B0BA 50%, transparent 100%);
+                        opacity: 0;
+                        top:66%;
+                        left:80%;
+                    }
+                  }
+                 #div5{
+                display:block;
+                width:110px;
+                height:110px;
+                background-color:#0FFFA3;
+                border-radius:50%;
+                position:absolute;
+                top:52%;
+                left:58%;
+                transform: translate(-50%, -50%);
+                z-index:0;
+                animation:color4 10s linear infinite;
+                }
+                @keyframes color4{
+                    0%{
+                        background: radial-gradient(circle, #A80332 50%, transparent 100%);
+                        opacity: 0;
+                        top:10%;
+                        left:85%;
+                    }
+                    50%{
+                        background: radial-gradient(circle, #C72250 70%, transparent 100%);
+                        opacity: 1;
+                        top:16%;
+                        left:80%;
+                    }
+                    100%{
+                        background: radial-gradient(circle, #ED5580 100%, transparent 100%);
+                        opacity: 0;
+                        top:22%;
+                        left:74%;
+                    }
+                  }
+                #div6{
+                display:block;
+                width:150px;
+                height:150px;
+                background-color:#0FFFA3;
+                border-radius:50%;
+                position:absolute;
+                top:52%;
+                left:58%;
+                transform: translate(-50%, -50%);
+                z-index:0;
+                animation:color5 10s linear infinite;
+                }
+                @keyframes color5{
+                    0%{
+                        background: radial-gradient(circle, #4CFCFB 50%, transparent 100%);
+                        opacity: 0;
+                        top:80%;
+                        left:85%;
+                    }
+                    50%{
+                        background: radial-gradient(circle, #4AD5FF 50%, transparent 100%);
+                        opacity: 1;
+                        top:16%;
+                        left:84%;
+                    }
+                    100%{
+                        background: radial-gradient(circle, #9DDEF2 50%, transparent 100%);
+                        opacity: 0;
+                        top:22%;
+                        left:90%;
+                    }
+                  }
+                #div7{
+                display:block;
+                width:210px;
+                height:210px;
+                background-color:#0FFFA3;
+                border-radius:50%;
+                position:absolute;
+                top:52%;
+                left:58%;
+                transform: translate(-50%, -50%);
+                z-index:0;
+                animation:color6 10s linear infinite;
+                }
+                @keyframes color6{
+                    0%{
+                        background: radial-gradient(circle, #D8FFCF 100%, transparent 100%);
+                        opacity: 0;
+                        top:86%;
+                        left:90%;
+                    }
+                    50%{
+                        background: radial-gradient(circle, #EEFFEB 80%, transparent 100%);
+                        opacity: 1;
+                        top:90%;
+                        left:50%;
+                    }
+                    100%{
+                        background: radial-gradient(circle, #DFE6DF 60%, transparent 100%);
+                        opacity: 0;
+                        top:95%;
+                        left:20%;
+                        z-index:3;
+                    }
+                  }
+
+                #div8{
+                display: block;
+                position: absolute;
+                width:3%;
+                max-width: 30px;
+                height:300px;
+                top:30%;
+                left:40%;
+                background-color: brown;
+                animation-name: line1;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-fill-mode: none;  
+            }
+            @keyframes line1{
+                0%{
+                    top:30%;
+                    left:40%;
+                }
+                100%{
+                    top:30%;
+                    left: 35%;
+                }
+            }
+                            
+                #div9{
+                display: block;
+                position: absolute;
+                width:7px;
+                max-width: 100px;
+                height:300px;
+                top:30%;
+                left:45%;
+                background-color: brown;
+                animation-name: line2;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-fill-mode: none;  
+            }
+            @keyframes line2{
+                0%{
+                    top:30%;
+                    left:45%;
+                }
+                100%{
+                    top:30%;
+                    left: 40%;
+                }
+            }
+                            
+                #div10{
+                display: block;
+                position: absolute;
+                width:20px;
+                max-width: 20%;
+                height:300px;
+                top:30%;
+                left:50%;
+                background-color: brown;
+                animation-name: line3;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-fill-mode: none;  
+            }
+            @keyframes line3{
+                0%{
+                    top:30%;
+                    left:50%;
+                }
+                100%{
+                    top:30%;
+                    left: 45%;
+                }
+            }
+              
+                #div11{
+                display: block;
+                position: absolute;
+                width:7px;
+                max-width: 100px;
+                height:300px;
+                top:30%;
+                left:55%;
+                background-color: brown;
+                animation-name: line4;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-fill-mode: none;  
+            }
+            @keyframes line4{
+                0%{
+                    top:30%;
+                    left:55%;
+                }
+                100%{
+                    top:30%;
+                    left:50%;
+                }
+            }
+             
+                 #div12{
+                display: block;
+                position: absolute;
+                width:7px;
+                max-width: 100px;
+                height:300px;
+                top:30%;
+                left:60%;
+                background-color: brown;
+                animation-name: line5;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-fill-mode: none;  
+            }
+            @keyframes line5{
+                0%{
+                    top:30%;
+                    left:60%;
+                }
+                100%{
+                    top:30%;
+                    left: 55%;
+                }
+            }
+                
+                #div13{
+                display: block;
+                position: absolute;
+                width:30px;
+                max-width: 100px;
+                height:300px;
+                top:30%;
+                left:63%;
+                background-color: brown;
+                animation-name: line6;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-fill-mode: none;  
+            }
+            @keyframes line6{
+                0%{
+                    top:30%;
+                    left:63%;
+                }
+                100%{
+                    top:30%;
+                    left: 60%;
+                }
+            }
+                
+                
+                 #div14{
+                display: block;
+                position: absolute;
+                width:7px;
+                max-width: 100px;
+                height:300px;
+                top:30%;
+                left:35%;
+                background-color: #DE183A;
+                z-index: 5;
+                animation-name: line7;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-fill-mode: none;  
+            }
+        
+            #div15{
+                display: block;
+                position: absolute;
+                width:300px;
+                height:7px;
+                top:30%;
+                left:35%;
+                background-color: #DE183A;
+                z-index: 5;
+                animation-name: line7;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-fill-mode: none;  
+            }
+            @keyframes line7{
+                0%{
+                    top:30%;
+                    left:35%;
+                }
+                100%{
+                    top:65%;
+                    left: 35%;
+                }
+            }
+
+            #div16{
+                display: block;
+                position: absolute;
+                width:7px;
+                max-width: 100px;
+                height:435px;
+                top:30%;
+                left:35%;
+                background-color: #DE183A;
+                transform: rotate(45deg);
+                z-index: 5;
+                animation-name: line8;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-fill-mode: none;  
+            }
+            @keyframes line8{
+                0%{
+                    top:20%;
+                    left:54%;
+                }
+                100%{
+                    top:55%;
+                    left:54%;
+                }
+            }
+
+            }
+
         }
+              
+
         
         @media screen and (min-width: 320px) and (max-width: 640px) {
             /* Minkyoung */
