@@ -29,35 +29,156 @@
        @media screen and (min-width: 867px) and (max-width: 1095px) {
             /* Yiming */
             body {
-                background-color: rgb(192, 225, 227);
+                background-color: rgb(0, 0, 0);
             }
 
             #div17 {
-                 width: 45vw;
-                 height: 30vh;
-                 position: relative;
-                 padding: 15%;
-                 border-radius:25%;
-                 background-color: #e6d5f0;
-                 transform: translateX(50%);
-                 transform: translateY(-50%);
-                 animation: scale 5s alternate-reverse;
+                 top: 50%;
+                 left: 0;
+                 width: 1vw;
+                 height: 1vw;
+                 position: absolute;
+                 padding: 3%;
+                 border-radius:50%;
+                 transform: translateY(50%);
+                 background-color: #f1f1ea;
+                 animation: run 1s linear;
+                 animation-fill-mode: forwards;
             }
-            @keyframes scale {
+            @keyframes run {
                 0%{
-                    transform: rotate(0);
-                    transform: scale(1);
+                    transform: translateX(0) translateY(-50%);
+                    
                 }
                 50%{
-                    transform: rotate(30);
-                    transform: scale(0.7);
+                    transform: translateX(14vw) translateY(-50%);
+                    
+                }
+                75%{
+                    transform: translateX(21vw) translateY(-50%);
+                    opacity: 100%;
+
                 }
                 100%{
-                    transform: rotate(180);
-                    transform: scale(0.2);
+                    transform: translateX(21vw) translateY(-50%);
+                    opacity: 0%;
+    
                 }
             }
-        }   
+
+             #div18 {
+                 top: 50%;
+                 left: 0;
+                 width: 1vw;
+                 height: 1vw;
+                 position: absolute;
+                 padding: 3%;
+                 border-radius:50%;
+                 transform: translateY(50%);
+                 background-color: #f1f1ea;
+                 animation: run2 1s linear;
+                 animation-fill-mode: forwards;
+                 animation-delay: 0.75s;
+                 opacity: 0;
+        }
+
+        @keyframes run2 {
+                0%{
+                    transform: translateX(21vw) translateY(-50%);
+                    
+                }
+                50%{
+                    transform: translateX(35vw) translateY(-50%);
+                    
+                }
+                75%{
+                    transform: translateX(42vw) translateY(-50%);
+                    opacity: 100%;
+
+                }
+                100%{
+                    transform: translateX(42vw) translateY(-50%);
+                    opacity: 0%;
+    
+                }
+            }
+             #div19 {
+                 top: 50%;
+                 left: 0;
+                 width: 1vw;
+                 height: 1vw;
+                 position: absolute;
+                 padding: 3%;
+                 border-radius:50%;
+                 transform: translateY(50%);
+                 background-color: #f1f1ea;
+                 animation: run3 1s linear;
+                 animation-fill-mode: forwards;
+                 animation-delay: 1.5s;
+                 opacity: 0;
+        }
+
+        @keyframes run3 {
+                0%{
+                    transform: translateX(42vw) translateY(-50%);
+                    
+                }
+                50%{
+                    transform: translateX(56vw) translateY(-50%);
+                    
+                }
+                75%{
+                    transform: translateX(63vw) translateY(-50%);
+                    opacity: 100%;
+
+                }
+                100%{
+                    transform: translateX(63vw) translateY(-50%);
+                    opacity: 0%;
+    
+                }
+            }
+            #div20 {
+                 top: 50%;
+                 left: 0;
+                 width: 1vw;
+                 height: 1vw;
+                 position: absolute;
+                 padding: 3%;
+                 border-radius:50%;
+                 transform: translateY(50%);
+                 background-color: #f1f1ea;
+                 animation: runscale 2s linear;
+                 animation-fill-mode: forwards;
+                 animation-delay: 2.25s;
+                 opacity: 0;
+        }
+
+        @keyframes runscale {
+                0%{
+                    transform: translateX(63vw) translateY(-50%);
+                    opacity: 100%;
+                    
+                }
+                25%{
+                    transform: translateX(77vw) translateY(-50%);
+                    
+                }
+                37.5%{
+                    transform: translateX(84vw) translateY(-50%) scale(1);
+                    
+
+                }
+                50%{
+                    transform: translateX(84vw) translateY(-50%) scale(15);
+                    opacity: 100%;
+                }
+                100%{
+                    transform: translateX(84vw) translateY(-50%) scale(75);
+                    opacity: 100%;
+                }
+            }
+    }
 
         @media screen and (min-width: 640px) and (max-width: 867px) {
             /* Mandy */
