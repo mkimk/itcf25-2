@@ -18,8 +18,71 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <style>
+      
         @media screen and (min-width: 1322px) {
-            /* Runqi */
+
+    body {
+        background: radial-gradient(circle, #4facfe 0%, #003f5c 100%);
+        animation: hueShift 12s infinite alternate ease-in-out;
+        overflow: hidden;
+    }
+    @keyframes hueShift {
+        from { filter: hue-rotate(0deg); }
+        to   { filter: hue-rotate(50deg); }
+    }
+
+    #div1, #div2, #div3 {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.25;
+        mix-blend-mode: screen;
+        filter: blur(2px);
+        animation: float 6s infinite alternate ease-in-out;
+    }
+
+    #div1 {
+        width: 18vw; height: 18vw;
+        left: 15%; top: 20%;
+        background: radial-gradient(circle, #fff3 0%, #4facfe33 100%);
+    }
+
+    #div2 {
+        width: 14vw; height: 14vw;
+        right: 12%; top: 55%;
+        background: radial-gradient(circle, #fff2 0%, #78c6ff33 100%);
+        animation-duration: 8s;
+    }
+
+    #div3 {
+        width: 25vw; height: 25vw;
+        left: 50%; bottom: -10%;
+        transform: translateX(-50%);
+        background: radial-gradient(circle, #ffffff22 0%, transparent 80%);
+        animation-duration: 10s;
+    }
+
+    @keyframes float {
+        from { transform: translateY(0) scale(1); }
+        to   { transform: translateY(-30px) scale(1.1); }
+    }
+
+    #div4, #div5, #div6 {
+        position: absolute;
+        width: 10px; height: 10px;
+        background: #ffffff33;
+        border-radius: 50%;
+        filter: blur(1px);
+        animation: drift 4s infinite alternate ease-in-out;
+    }
+    #div4 { left: 30%; top: 60%; }
+    #div5 { left: 60%; top: 30%; animation-duration: 5s; }
+    #div6 { left: 80%; top: 70%; animation-duration: 6s; }
+
+    @keyframes drift {
+        from { transform: translate(0,0); opacity: 0.3; }
+        to   { transform: translate(20px, -20px); opacity: 0.6; }
+    }
+}
         }
 
         @media screen and (min-width: 1095px) and (max-width: 1322px) {
