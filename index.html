@@ -18,54 +18,50 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <style>
-        @media screen and (min-width: 1322px) and (max-width: fullscreen){
-            /* Runqi */
-body {
-    /* Smooth animated rainbow gradient */
-    background: linear-gradient(120deg,
-        #ff0000,
-        #ff7f00,
-        #ffff00,
-        #00ff00,
-        #0000ff,
-        #4b0082,
-        #9400d3
-    );
-    background-size: 400% 400%;
-    animation: rainbowShift 15s ease-in-out infinite;
-}
+      @media screen and (min-width: 1322px) {
+    /* Runqi */
+    body {
+        background: linear-gradient(120deg,
+            #ff0000,
+            #ff7f00,
+            #ffff00,
+            #00ff00,
+            #0000ff,
+            #4b0082,
+            #9400d3
+        );
+        background-size: 400% 400%;
+        animation: rainbowShift 15s ease-in-out infinite;
+    }
 
-/* Rainbow shifting animation */
-@keyframes rainbowShift {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+    @keyframes rainbowShift {
+        0%   { background-position: 0% 50%; }
+        50%  { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
 
-/* Floating ball */
-#runqi-ball {
-    position: absolute;
-    width: 12vw;
-    height: 12vw;
-    border-radius: 50%;
-    background: radial-gradient(circle, #ffffff 0%, #ff66cc 70%, #cc0099 100%);
-    box-shadow: 0 0 50px rgba(255, 120, 200, 0.6);
-    animation: floatBall 6s ease-in-out infinite;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
+    #runqi-ball {
+        position: absolute;
+        width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+        background: radial-gradient(circle, #ffffff 0%, #ff66cc 70%, #cc0099 100%);
+        box-shadow: 0 0 50px rgba(255, 120, 200, 0.6);
+        animation: floatBall 6s ease-in-out infinite;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
 
-/* Floating animation */
-@keyframes floatBall {
-    0%   { transform: translate(-50%, -50%) translateY(0) rotate(0deg); }
-    25%  { transform: translate(-50%, -50%) translate(4vw, -3vw) rotate(60deg); }
-    50%  { transform: translate(-50%, -50%) translate(0, -5vw) rotate(120deg); }
-    75%  { transform: translate(-50%, -50%) translate(-4vw, -3vw) rotate(180deg); }
-    100% { transform: translate(-50%, -50%) translateY(0) rotate(360deg); }
+    @keyframes floatBall {
+        0%   { transform: translate(-50%, -50%) translateY(0) rotate(0deg); }
+        25%  { transform: translate(-50%, -50%) translate(4vw, -3vw) rotate(60deg); }
+        50%  { transform: translate(-50%, -50%) translate(0, -5vw) rotate(120deg); }
+        75%  { transform: translate(-50%, -50%) translate(-4vw, -3vw) rotate(180deg); }
+        100% { transform: translate(-50%, -50%) translateY(0) rotate(360deg); }
+    }
 }
-        }
 
         @media screen and (min-width: 1095px) and (max-width: 1322px) {
             /* Coco */
@@ -1003,6 +999,7 @@ body {
     <div id="div18"></div>
     <div id="div19"></div>
     <div id="div20"></div>
+    <div id="runqi-ball"></div>
 </body>
 
 </html>
